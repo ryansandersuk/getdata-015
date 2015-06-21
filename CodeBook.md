@@ -88,4 +88,4 @@ The original signals were normalized and bounded within [-1,1].
 
 The data is the average by subject and activity of the mean and standard
 deviation of the features in the original Samsung data set. There is some minor
-cleanup to the variable names.
+cleanup of the original variable names.
