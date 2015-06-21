@@ -24,9 +24,10 @@ test_activity <- read.table("UCI HAR Dataset/test/y_test.txt")
 
 features <- read.table("UCI HAR Dataset/features.txt")
 
-# Correct the common typos in some of the variable names
+# Correct the common typos in some of the variable names; make naming consistent
 features$V2 <- sub("BodyBody", "Body", features$V2)
 features$V2 <- sub("\\),", ",", features$V2)
+features$V2 <- sub("-", ".", features$V2)
 
 # Cleanup the names
 features$V2 <- sub("\\(\\)", "", features$V2)
